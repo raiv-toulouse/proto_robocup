@@ -24,6 +24,12 @@ On peut téléopérer le robot grace au programme suivant :
 roslaunch proto_robocup keyboard_teleop.launch
 ```
 
+Le programme suivant déplace automatiquement le robot dans l'environnement en contournant les obstacles détectés à moins d'une certaine distance.
+
+```commandline
+rosrun proto_robocup robot_eviteur.py
+```
+
 ## Tips ##
 
 If you have any problems with laser scan it probably means that you don't have a dedicated graphic card (or lack appropriate drivers). If that's the case then you'll have to change couple of things in /rosbot_description/urdf/rosbot_gazebo file:
